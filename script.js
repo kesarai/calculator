@@ -63,7 +63,11 @@ function operate(num1, selectedOperator, num2 ) {
         case 'x':
             return multiply(num1, num2);
         case '÷':
-            return divide(num1, num2);
+         if(num2 === 0){
+            return alert("You can't divide by 0 genius 🤓")
+         } else { 
+        return divide(num1, num2);
+        } 
         default:
             return NaN;
     }
