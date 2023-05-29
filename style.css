@@ -1,5 +1,6 @@
 #content {
-    text-align: center;
+    display: flex;
+    justify-content: center;
     margin-top: 50px;
 }
 
@@ -7,14 +8,69 @@
     display:flex;
     flex-direction: column;
     border: 3px solid black;
-    
+    background-color: rgb(31, 31, 31);
     align-items: center;
     width: 350px;
-    height: 400px;
+    height: 450px;
 }
 #screen {
-    width: 300px;
-    height: 30px;
-    background-color: darkslategray;
+    width: 305px;
+    height: 50px;
+    background-color: #B2B9B7;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-radius: 5%;
+    font-size: 48px;
+    font-family: 'Orbitron', sans-serif;
+    display: flex;
+    justify-content: flex-end;
+}
 
+button {
+font-size: large;
+width: 60px;
+height: 50px;
+border-radius: 10%;
+margin: 2px;
+background-color: rgb(83, 0, 119);
+}
+
+#buttons {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+#clearandnum {
+    display: flex;
+    flex-direction: column;
+}
+
+#clear {
+    margin-bottom: 30px;
+    align-self: flex-start;
+    background-color: rgb(221, 144, 0);
+
+}
+
+
+#operators {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-top: 0px;
+    justify-content: space-around;
+
+}
+.operator {
+    background-color: rgb(221, 144, 0);
+}
+#equal {
+    background-color: rgb(221, 144, 0);
+}
+
+
+#zero {
+    align-self: center;
+    width: 100px;
 }
